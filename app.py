@@ -37,3 +37,19 @@ def health():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+<head>
+<body>
+def fetch_data():
+    url = 'https://jsonplaceholder.typicode.com/todos'
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()[:5]
+        return jsonify(data)
+    else:
+         return jsonify({"error": "Failed to fetch data"}), 500
+
+
+
+
+</body>    
+</head>
