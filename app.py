@@ -47,9 +47,5 @@ def fetch_data():
         return jsonify(data)
     else:
          return jsonify({"error": "Failed to fetch data"}), 500
-
-
-
-
 </body>    
 </head>
